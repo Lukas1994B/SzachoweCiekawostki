@@ -1,2 +1,2 @@
 # SzachoweCiekawostki
-Praca na pierwsze laboratorium
+Praca na pierwsze laboratorium z zaawansowanego programowania
