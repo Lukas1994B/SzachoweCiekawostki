@@ -54,7 +54,7 @@ namespace SzachoweCiekawostki
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price")] ChessPlayers chessPlayers)
+        public async Task<IActionResult> Create([Bind("Id,ImieNazwisko,DataUrodzenia,Klub,Ranking")] ChessPlayers chessPlayers)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace SzachoweCiekawostki
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price")] ChessPlayers chessPlayers)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,ImieNazwisko,DataUrodzenia,Klub,Ranking")] ChessPlayers chessPlayers)
         {
             if (id != chessPlayers.Id)
             {
