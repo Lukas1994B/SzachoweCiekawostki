@@ -30,6 +30,13 @@ namespace SzachoweCiekawostki
             options.UseSqlServer(Configuration.GetConnectionString("MvcChessPlayersContext")));
 
         }
+        public void ConfigureService1(IServiceCollection services)
+        {
+            services.AddControllersWithViews();
+            services.AddDbContext<MvcBooksContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("MvcBooksContext")));
+
+        }
 
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
