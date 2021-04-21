@@ -26,16 +26,16 @@ namespace SzachoweCiekawostki.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Genre")
+                    b.Property<string>("Klub")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Price")
+                    b.Property<int>("Ranking")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<DateTime>("ReleaseDate")
+                    b.Property<DateTime>("DataUrodzenia")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Title")
+                    b.Property<string>("ImieNazwisko")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

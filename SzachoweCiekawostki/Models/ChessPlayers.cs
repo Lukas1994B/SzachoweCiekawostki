@@ -9,11 +9,11 @@ namespace SzachoweCiekawostki.Models
     public class ChessPlayers
     {
         public int Id { get; set; }
-        public string Title { get; set; }
+        public string ImieNazwisko { get; set; }
         [DataType(DataType.Date)]
-        public DateTime ReleaseDate { get; set; }
-        public string Genre { get; set; }
-        public decimal Price { get; set; }
+        public DateTime DataUrodzenia { get; set; }
+        public string Klub { get; set; }
+        public int Ranking { get; set; }
     }
 
 }
