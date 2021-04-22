@@ -28,11 +28,6 @@ namespace SzachoweCiekawostki
             services.AddControllersWithViews();
             services.AddDbContext<MvcChessPlayersContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("MvcChessPlayersContext")));
-
-        }
-        public void ConfigureService1(IServiceCollection services)
-        {
-            services.AddControllersWithViews();
             services.AddDbContext<MvcBooksContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("MvcBooksContext")));
 

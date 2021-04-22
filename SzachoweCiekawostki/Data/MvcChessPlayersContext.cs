@@ -14,5 +14,6 @@ namespace SzachoweCiekawostki.Data
         {
         }
         public DbSet<ChessPlayers> ChessPlayers { get; set; }
+        public DbSet<Books> Books { get; set; }
     }
 }
